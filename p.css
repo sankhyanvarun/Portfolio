@@ -1,0 +1,479 @@
+header {
+    top: 0;
+    left:0;
+    position: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
+    height: 100%;
+    background-color: #333; 
+    color: white;
+    padding: 10px; 
+    box-sizing: border-box;
+    /* position:fixed; */
+    background-image: url("name.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    box-shadow:0 0 4px;
+  
+}
+.header-element01{
+     margin-top: 200px;
+    }
+.header-element01:hover{
+    /* text-shadow: 1px 1px; */
+    color:#32b7ff;
+    cursor:pointer;
+}
+
+.header-element02{
+    margin-top: 40px;
+}
+.header-element02:hover{
+    color:rgb(116, 255, 74);
+    cursor:pointer;
+
+}
+.header-element03{
+    margin-top: 40px;
+}
+.header-element03:hover{
+    color:rgb(255, 252, 74);
+    cursor:pointer;
+
+}
+.header-element04{
+    margin-top: 40px;
+}
+.header-element04:hover{
+    color:rgb(255, 183, 74);
+    cursor:pointer;
+
+}
+.header-element05{
+    margin-top: 40px;
+}
+.header-element05:hover{
+    color:rgb(255, 74, 74);
+    cursor:pointer;
+
+}
+.slideshow-container {
+    position: absolute;
+    top: 8px; /* height of the header */
+    left: 110px; /* width of the header plus some spacing */
+    max-width: calc(100% - 120px); /* width of the viewport minus header width and spacing */
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 1050px;
+    height:160px;
+    margin-left:100px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.Hey-There{
+    margin-top: 600px;
+    margin-left:620px;
+    margin-right:0px;
+    color: #bba529;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size:30px;
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "XROT" 0,
+      "YROT" 0;
+}
+.Hey-There:hover{
+    color: #ddc434;
+    text-decoration: underline;
+    cursor:pointer;
+
+}
+.detail{
+    margin-left: 250px;
+    font-size: 30px;
+    align-content: center;
+    /* font-family:sans-serif; */
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 250;
+  font-style: normal;
+  cursor:pointer;
+
+
+}
+.blue-heading {
+    background-color: #29C5F6;
+    color: rgb(16, 4, 4);
+    border: none;
+    border-radius: 80px;
+    box-shadow: 0 0 4px #000000;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+    margin-left:240px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    /* display: block; */
+    width: 72%;
+    text-align: left;
+    padding-left: 90px;
+    cursor: pointer;
+}
+.blue-heading:hover{
+    text-decoration: underline;
+    background-color: #57cef1;
+
+
+}
+.ABOUT {
+    margin-top: 50px;
+    color:rgb(236, 233, 239);
+    display: flex;
+    align-items: center;
+    /* box-shadow: 0 0 8px; */
+}
+.ABOUT-photo{
+  
+    width:40%;
+    height:360px;
+    background-image: url("05.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    position:sticky;
+    /* border-style: ridge; */
+}
+.ABOUT-photo:hover{
+    width:39%;
+    height:355px;
+}
+.About-element01 {
+    margin-left: 300px;
+    margin-right:150px;
+    color: #bba529;
+    font-family:  "Grechen Fuemen", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+}
+.About-element01:hover {
+    text-decoration: underline;
+
+}
+.About-element03 {
+    color:black;
+    color: #bba529;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+ font-family:  "Grechen Fuemen", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+  }
+  .About-element03:hover { 
+    text-decoration: underline;
+
+}
+  .check-out{
+    color:#333;
+    margin-left: 600px;
+    margin-top: 15px;
+    font-size: 20px;
+    height:80px;
+    width:290px;
+    /* font-family:sans-serif; */
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 250;
+  font-style: normal;
+  }
+  .education-head{
+    color: #bba529;
+    margin-left:300px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:40px;
+    
+  }
+  .education-head:hover{
+    text-decoration: underline;  
+
+  }
+ .about-content{
+    display:flex;
+    margin-left: 300px;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 250;
+  font-style: normal;
+  cursor:pointer;
+
+ }
+ .about-content-text{
+    margin-top: 30px;
+    font-family:sans-serif;
+    font-size: 20px;
+    align-content: center;
+    width:600px;
+    cursor:pointer;
+
+ }
+ /* .about-content-photo{
+    background-image: url("05.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+
+ } */
+ .blue-small-heading {
+    /* background-color: #66d8fb; */
+    color: rgb(16, 4, 4);
+    border-radius: 10px;
+    box-shadow: 0 0 4px #000000;
+    font-size: 30px;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    padding: 10px;
+    margin-left:280px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    width: 16%;
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 550;
+  font-style: normal;
+}
+.blue-small-heading:hover {
+    box-shadow: 0 2px 4px #000000;
+}
+.languages-set{
+    display:inline-flex;
+    margin-left: 280px;
+}
+.languages{
+    background-color: #bde1ec;
+    color: rgb(16, 4, 4);
+    border-radius: 15px;
+    box-shadow: 0 0 4px #000000;
+    font-size: 30px;
+    /* font-family:sans-serif; */
+    padding: 10px;
+    margin-left:20px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    /* width: 9%; */
+    text-align:center;
+    /* padding-left: 20px; */
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.languages:hover{
+    box-shadow: 2px 2px 4px #000000;
+}
+.Engineering-detail{
+    margin-top:30px;
+    margin-left: 300px;
+    font-size: 30px;
+    align-content: center;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 250;
+  font-style: normal;
+  cursor:pointer;
+
+
+
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: space-around; /* Distributes space around items */
+    margin-left: 350px;
+    margin-right: 20px;
+}
+
+.project {
+    width: 48%; /* Adjust width to fit 2 projects per row */
+    margin-bottom: 20px; /* Space between rows */
+}
+.project:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+
+}
+.project-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 40px;
+    margin-top: 50px;
+    height: 300px; /* Fixed height for images */
+}
+
+.project-text {
+    text-align:left;
+    color:#bba529; /* Example text color */
+    margin-top: 10px;
+    font-weight: 100px;
+    font-size: 50px;
+    font-family:  "Crushed", sans-serif;
+
+}
+.header-element01 h1 a {
+    color: inherit; /* Inherits the color from the parent h1 element */
+    text-decoration: none; /* Removes underline from links */
+}
+.header-element01 h1 {
+    color: rgb(230, 230, 230); /* Or any other color */
+}
+.header-element01:hover h1 {
+    color: rgb(32, 202, 249); /* Or any other color */
+
+}
+.header-element02 h1 a {
+    color: inherit; /* Inherits the color from the parent h1 element */
+    text-decoration: none; /* Removes underline from links */
+}
+.header-element02 h1 {
+    color: rgb(230, 230, 230); /* Or any other color */
+}
+.header-element02:hover h1 {
+    color: rgb(50, 249, 32); /* Or any other color */
+
+}
+.header-element03 h1 a {
+    color: inherit; /* Inherits the color from the parent h1 element */
+    text-decoration: none; /* Removes underline from links */
+}
+.header-element03 h1 {
+    color: rgb(230, 230, 230); /* Or any other color */
+}
+.header-element03:hover h1 {
+    color: rgb(249, 245, 32); /* Or any other color */
+
+}
+.header-element04 h1 a {
+    color: inherit; /* Inherits the color from the parent h1 element */
+    text-decoration: none; /* Removes underline from links */
+}
+.header-element04 h1 {
+    color: rgb(230, 230, 230); /* Or any other color */
+}
+.header-element04:hover h1 {
+    color: rgb(249, 144, 32); /* Or any other color */
+
+}
+.header-element05 h1 a {
+    color: inherit; /* Inherits the color from the parent h1 element */
+    text-decoration: none; /* Removes underline from links */
+}
+.header-element05 h1 {
+    color: rgb(230, 230, 230); /* Or any other color */
+}
+.header-element05:hover h1 {
+    color: rgb(249, 32, 32); /* Or any other color */
+
+}
+.About-element01  a {
+    color: inherit; /* Inherits the color from the parent h1 element */
+    text-decoration: none; /* Removes underline from links */
+}
+.About-element01  {
+    color:#bba529; /* Or any other color */
+}
+.About-element01:hover {
+    color:#ddc434; /* Or any other color */
+
+}
+.About-element03  a {
+    color: inherit; /* Inherits the color from the parent h1 element */
+    text-decoration: none; /* Removes underline from links */
+}
+.About-element03  {
+    color:#bba529; /* Or any other color */
+}
+.About-element03:hover {
+    color:#ddc434; /* Or any other color */
+
+}
+.project-text  a {
+    color: inherit; /* Inherits the color from the parent h1 element */
+    text-decoration: none; /* Removes underline from links */
+}
+.project-text  {
+    color:#bba529; /* Or any other color */
+}
+.project-text:hover {
+    color:#ddc434; /* Or any other color */
+
+}
+.contact-heading {
+    /* background-color: #66d8fb; */
+    color: rgb(16, 4, 4);
+    border-radius: 80px;
+    box-shadow: 0 0 4px #000000;
+    font-size: 30px;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    padding: 10px;
+    margin-left:280px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    /* width: 16%; */
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 550;
+  font-style: normal;
+}
+.contact-heading:hover {
+    box-shadow: 0 2px 4px #000000;
+}
+.webpages{
+    background-color: #bde1ec;
+    color: rgb(16, 4, 4);
+    border-radius: 15px;
+    box-shadow: 0 0 4px #000000;
+    font-size: 30px;
+    /* font-family:sans-serif; */
+    padding: 10px;
+    margin-left:330px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    /* width: 9%; */
+    text-align:center;
+    /* padding-left: 20px; */
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.PDF-photo{
+    margin-top: 50px;
+    width:40%;
+    height:360px;
+    background-image: url("PDF.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    position:sticky;
+    margin-left: 350px;
+    /* border-style: ridge; */
+}
