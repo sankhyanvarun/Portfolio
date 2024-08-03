@@ -1,3 +1,9 @@
+*
+{
+    padding: 0;
+    margin:0;
+    scroll-behavior:smooth;
+}
 header {
     top: 0;
     left:0;
@@ -5,19 +11,65 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 200px;
     height: 100%;
-    background-color: #333; 
+    background-color: #373736; 
     color: white;
     padding: 10px; 
     box-sizing: border-box;
-    /* position:fixed; */
-    background-image: url("name.png");
-    background-repeat: no-repeat;
-    background-size:contain;
-    box-shadow:0 0 4px;
-  
+    box-shadow:0 4 4px;
 }
+.box {
+    /* background-color: rebeccapurple; */
+    background-image: url("003.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 0px;
+    animation-name: heartbeat;
+    animation-duration: 1.6s; /* Adjusted duration for a more realistic heartbeat */
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+  }
+  .box:hover {
+    animation-name: heartbeat;
+    animation-duration: 1.5s; /* Adjusted duration for a more realistic heartbeat */
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+  @keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.05); /* Smaller pulse */
+    }
+    30% {
+        transform: scale(1); /* Back to normal */
+    }
+    40% {
+        transform: scale(1.1); /* Bigger pulse */
+    }
+    50% {
+        transform: scale(1); /* Back to normal */
+    }
+}
+@keyframes rotateY {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
 .header-element01{
-     margin-top: 200px;
+     margin-top: 20px;
     }
 .header-element01:hover{
     /* text-shadow: 1px 1px; */
@@ -59,9 +111,9 @@ header {
 }
 .slideshow-container {
     position: absolute;
-    top: 8px; /* height of the header */
-    left: 110px; /* width of the header plus some spacing */
-    max-width: calc(100% - 120px); /* width of the viewport minus header width and spacing */
+    top: 1%; /* height of the header */
+    left: 9%; /* width of the header plus some spacing */
+    /* max-width: calc(100% - 120px);  */
     margin: auto;
 }
 
@@ -69,17 +121,24 @@ header {
     display: none;
     position: absolute;
     width: 1050px;
-    height:160px;
-    margin-left:100px;
+    height: 160px;
+    margin-left: 100px;
+    transform: scale(0.9); /* Initial smaller size */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.slide:hover {
+    transform: scale(1); /* Zoom in to original size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+    transform-origin: center;
+}
 .slide img {
     width: 100%;
     height: auto;
 }
 
 .fade {
-    animation-name: fade;
+    animation-name:fade;
     animation-duration: 1.5s;
 }
 
@@ -95,7 +154,7 @@ header {
     margin-top: 600px;
     margin-left:620px;
     margin-right:0px;
-    color: #bba529;
+    color:#ffe345;
     /* font-family: Arial, Helvetica, sans-serif; */
     font-size:30px;
     font-family: "Tilt Neon", sans-serif;
@@ -105,16 +164,23 @@ header {
     font-variation-settings:
       "XROT" 0,
       "YROT" 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .Hey-There:hover{
-    color: #ddc434;
-    text-decoration: underline;
+    color:#ffe345;
+    /* text-decoration: underline; */
     cursor:pointer;
-
+    transform: scale(1.1);
+    /* Zoom in */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+    /* Add shadow */
+    transform-origin: center;
 }
+
 .detail{
     margin-left: 250px;
     font-size: 30px;
+    color: #fefefe;
     align-content: center;
     /* font-family:sans-serif; */
     font-family: "Ubuntu", sans-serif;
@@ -141,13 +207,18 @@ header {
     text-align: left;
     padding-left: 90px;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .blue-heading:hover{
-    text-decoration: underline;
+    /* text-decoration:dotted; */
     background-color: #57cef1;
-
-
+    transform: scale(1.1);
+    /* Zoom in */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Add shadow */
+    transform-origin: center;
 }
+
 .ABOUT {
     margin-top: 50px;
     color:rgb(236, 233, 239);
@@ -155,44 +226,59 @@ header {
     align-items: center;
     /* box-shadow: 0 0 8px; */
 }
-.ABOUT-photo{
-  
-    width:40%;
-    height:360px;
+.ABOUT-photo {
+    width: 289px;
+    height: 300px;
     background-image: url("05.jpg");
     background-repeat: no-repeat;
-    background-size:contain;
-    position:sticky;
+    background-size: contain;
+    position: sticky;
     /* border-style: ridge; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.ABOUT-photo:hover{
-    width:39%;
-    height:355px;
+
+.ABOUT-photo:hover {
+    transform: scale(1.1);
+    /* Zoom in */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Add shadow */
+    transform-origin: center;
 }
 .About-element01 {
     margin-left: 300px;
     margin-right:150px;
-    color: #bba529;
+    color: #ffd900;
     font-family:  "Grechen Fuemen", cursive;
     font-weight: 100;
     font-style: normal;
     font-size: 30px;
 }
 .About-element01:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    transform: scale(1.1);
+    /* Zoom in */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Add shadow */
+    transform-origin: center;
 
 }
 .About-element03 {
-    color:black;
-    color: #bba529;
+    /* color:black; */
+    color: #ffe345;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
  font-family:  "Grechen Fuemen", cursive;
     font-weight: 100;
     font-style: normal;
     font-size: 30px;
+    margin-left:15% ;
   }
   .About-element03:hover { 
-    text-decoration: underline;
+    transform: scale(1.1);
+    /* Zoom in */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Add shadow */
+    transform-origin: center;
+
 
 }
   .check-out{
@@ -207,17 +293,7 @@ header {
   font-weight: 250;
   font-style: normal;
   }
-  .education-head{
-    color: #bba529;
-    margin-left:300px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:40px;
-    
-  }
-  .education-head:hover{
-    text-decoration: underline;  
 
-  }
  .about-content{
     display:flex;
     margin-left: 300px;
@@ -314,23 +390,40 @@ header {
 .project {
     width: 48%; /* Adjust width to fit 2 projects per row */
     margin-bottom: 20px; /* Space between rows */
+    
 }
 .project:hover {
     transform: scale(1.1);
     opacity: 0.8;
-
 }
+.box:hover {
+    animation-name: rotate-flip;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+
 .project-image {
+    animation-name:rotateY;
+    height:80%;
+    width:80%;
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 40px;
     margin-top: 50px;
     height: 300px; /* Fixed height for images */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity:90%;
 }
 
 .project-text {
     text-align:left;
-    color:#bba529; /* Example text color */
+    color:#ffe345; /* Example text color */
     margin-top: 10px;
     font-weight: 100px;
     font-size: 50px;
@@ -417,9 +510,21 @@ header {
 .project-text  a {
     color: inherit; /* Inherits the color from the parent h1 element */
     text-decoration: none; /* Removes underline from links */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.project-text  a:hover{
+    transform: scale(1.1);
+    /* Zoom in */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Add shadow */
+    transform-origin: center;
+
 }
 .project-text  {
     color:#bba529; /* Or any other color */
+    
 }
 .project-text:hover {
     color:#ddc434; /* Or any other color */
@@ -443,8 +548,14 @@ header {
     font-family: "Ubuntu", sans-serif;
   font-weight: 550;
   font-style: normal;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .contact-heading:hover {
+    transform: scale(1.1);
+    /* Zoom in */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Add shadow */
+    transform-origin: center;
     box-shadow: 0 2px 4px #000000;
 }
 .webpages{
@@ -465,10 +576,21 @@ header {
     font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.webpages:hover{
+    transform: scale(1.1);
+    /* Zoom in */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Add shadow */
+    transform-origin: center;
+
+
 }
 .PDF-photo{
     margin-top: 50px;
-    width:40%;
+    width:360px;
     height:360px;
     background-image: url("PDF.jpg");
     background-repeat: no-repeat;
@@ -476,4 +598,14 @@ header {
     position:sticky;
     margin-left: 350px;
     /* border-style: ridge; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.PDF-photo:hover{
+    transform: scale(1.1);
+    /* Zoom in */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Add shadow */
+    transform-origin: center;
+
 }
