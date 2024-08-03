@@ -282,7 +282,7 @@ header {
 
 }
   .check-out{
-    color:#333;
+    color:#ffe345;
     margin-left: 600px;
     margin-top: 15px;
     font-size: 20px;
@@ -532,7 +532,7 @@ header {
 }
 .contact-heading {
     /* background-color: #66d8fb; */
-    color: rgb(16, 4, 4);
+    color:#ffe345;
     border-radius: 80px;
     box-shadow: 0 0 4px #000000;
     font-size: 30px;
@@ -557,6 +557,7 @@ header {
     /* Add shadow */
     transform-origin: center;
     box-shadow: 0 2px 4px #000000;
+
 }
 .webpages{
     background-color: #bde1ec;
